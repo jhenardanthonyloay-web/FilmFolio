@@ -1,0 +1,86 @@
+/* BACKGROUND & GLOBALS */
+html, body {
+    background-color: #0b0512 !important;
+    background-image: 
+        radial-gradient(circle at 50% 20%, rgba(88, 28, 135, 0.25) 0%, transparent 60%),
+        radial-gradient(circle at 50% 80%, rgba(45, 16, 74, 0.3) 0%, transparent 70%) !important;
+    color: #ffffff !important;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.font-serif-title {
+    font-family: 'Playfair Display', serif !important;
+}
+
+/* TIMELINE VERTICAL LINE */
+.timeline-container {
+    position: relative;
+    padding-left: 24px;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 10px;
+    bottom: 0;
+    width: 2px;
+    background: rgba(168, 85, 247, 0.3);
+}
+
+/* TIMELINE MONTH DOT */
+.timeline-dot {
+    position: absolute;
+    left: -24px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #a855f7;
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.8);
+}
+
+/* LOG ENTRY ROW CONTAINER */
+.journal-row-card {
+    background: rgba(20, 9, 32, 0.85) !important;
+    border: 1px solid rgba(168, 85, 247, 0.35) !important;
+    border-radius: 16px !important;
+    padding: 12px !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.journal-row-card:hover {
+    border-color: rgba(168, 85, 247, 0.8) !important;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.25) !important;
+}
+
+/* POSTER THUMBNAIL */
+.poster-thumb {
+    background: linear-gradient(180deg, #9333ea 0%, #4c1d95 100%) !important;
+    border-radius: 8px !important;
+    width: 45px;
+    height: 62px;
+    flex-shrink: 0;
+}
+
+/* STAR RATING */
+.star-rating {
+    color: #a855f7;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* LOG A FILM BUTTON */
+.btn-log-film {
+    background: #a855f7 !important;
+    color: #ffffff !important;
+    transition: all 0.2s ease;
+}
+
+.btn-log-film:hover {
+    background: #9333ea !important;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.5) !important;
+}

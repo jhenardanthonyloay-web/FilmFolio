@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* SOLID DARK BACKGROUND MATCHING PROTOTYPE HEADER */
+html, body {
+    background-color: #171123 !important;
+    color: #e2d9f3;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* CUSTOM CARDS AND DROPDOWNS MATCHING THE PROTOTYPE */
+.bg-dark-card {
+    background-color: #231936 !important;
+}
+
+.bg-dark-input {
+    background-color: #120c1d !important;
+}
+
+.border-dark-purple {
+    border-color: #2d2145 !important;
+}
+
+/* CARD HOVER EFFECT */
+.movie-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.movie-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}

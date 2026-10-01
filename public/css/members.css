@@ -1,0 +1,66 @@
+/* BACKGROUND & GLOBALS */
+html, body {
+    background-color: #0b0512 !important;
+    background-image: 
+        radial-gradient(circle at 50% 20%, rgba(88, 28, 135, 0.25) 0%, transparent 60%),
+        radial-gradient(circle at 50% 80%, rgba(45, 16, 74, 0.3) 0%, transparent 70%) !important;
+    color: #ffffff !important;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.font-serif-title {
+    font-family: 'Playfair Display', serif !important;
+}
+
+/* MEMBER CARD CONTAINER */
+.member-card {
+    background: rgba(20, 9, 32, 0.85) !important;
+    border: 1px solid rgba(168, 85, 247, 0.35) !important;
+    border-radius: 16px !important;
+    padding: 16px !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.member-card:hover {
+    border-color: rgba(168, 85, 247, 0.8) !important;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.25) !important;
+    transform: translateY(-2px);
+}
+
+/* AVATAR PLACEHOLDER */
+.avatar-box {
+    background: linear-gradient(180deg, #9333ea 0%, #4c1d95 100%) !important;
+    border-radius: 9999px;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+}
+
+/* SEARCH INPUT */
+.search-input {
+    background: rgba(15, 7, 26, 0.8) !important;
+    border: 1px solid rgba(168, 85, 247, 0.3) !important;
+    color: #ffffff !important;
+}
+
+.search-input:focus {
+    border-color: rgba(168, 85, 247, 0.7) !important;
+    outline: none !important;
+}
+
+/* FOLLOW BUTTON */
+.btn-follow {
+    background: transparent !important;
+    border: 1px solid rgba(168, 85, 247, 0.5) !important;
+    color: #d8b4fe !important;
+    transition: all 0.2s ease;
+}
+
+.btn-follow:hover {
+    background: #a855f7 !important;
+    color: #ffffff !important;
+    border-color: #a855f7 !important;
+}

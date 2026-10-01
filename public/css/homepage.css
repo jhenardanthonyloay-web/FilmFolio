@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap');
+
+/* Base Styles */
+body {
+    background-color: #121318;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Custom Hero Section Background (Walang Red Line Error sa VS Code) */
+.hero-bg {
+    background-image: linear-gradient(to bottom, rgba(18, 19, 24, 0.4) 0%, rgba(18, 19, 24, 0.8) 70%, #121318 100%), url('../images/cinema-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Custom Color Utility Classes */
+.bg-brand-dark { background-color: #121318; }
+.bg-brand-card { background-color: #1d152a; }
+.bg-brand-purple { background-color: #6b3ba7; }
+.hover\:bg-brand-lightPurple:hover { background-color: #8b5cf6; }
+
+.border-brand-border { border-color: #3b2b54; }
+.text-brand-purple { color: #6b3ba7; }
+.text-brand-lightPurple { color: #8b5cf6; }
+
+/* Custom Font Utilities */
+.font-serif { font-family: 'Playfair Display', serif; }
+.font-mono { font-family: 'Courier Prime', monospace; }
+.font-sans { font-family: 'Inter', sans-serif; }

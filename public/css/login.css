@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* Base Layout */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b0711;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Background Overlay with Cinema Seats Theme */
+.login-bg-overlay {
+    position: fixed;
+    inset: 0;
+    background-image: linear-gradient(to bottom, rgba(11, 7, 17, 0.75), rgba(11, 7, 17, 0.95)), url('../images/cinema-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    z-index: 1;
+}
+
+/* Close Button (X) Upper Right */
+.close-btn {
+    position: fixed;
+    top: 1.25rem;
+    right: 1.5rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    z-index: 30;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.close-btn:hover {
+    opacity: 1;
+}
+
+/* Modal Box */
+.login-card {
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    max-width: 410px;
+    background-color: #16121e;
+    border: 1px solid #231b30;
+    border-radius: 16px;
+    padding: 2.25rem 2.5rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Input Fields */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 14px;
+    width: 16px;
+    height: 16px;
+    color: #a89bb9;
+    stroke-width: 1.8;
+}
+
+.login-input {
+    width: 100%;
+    background-color: #1c1626;
+    color: #ffffff;
+    font-size: 0.85rem;
+    border-radius: 10px;
+    padding: 12px 14px 12px 42px;
+    border: 1px solid #2d233c;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-input::placeholder {
+    color: #6a5d7c;
+}
+
+.login-input:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 1px #7c3aed;
+}
+
+/* Show Password Text Button */
+.show-toggle {
+    position: absolute;
+    right: 14px;
+    background: none;
+    border: none;
+    color: #8b5cf6;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Login Submit Button */
+.login-btn {
+    width: 100%;
+    background-color: #8b5cf6;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+.login-btn:hover {
+    background-color: #7c3aed;
+}
